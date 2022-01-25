@@ -37,3 +37,12 @@ fun findDisappearedNumbers(nums: IntArray): List<Int> {
 
     return map.filter { entry ->entry.value==0  }.keys.toList()
 }
+
+// For Easy Solution
+
+fun diffsNumbers(listOfArray: Array<Int>): Array<Int> {
+    return ((1..(listOfArray.maxOrNull() ?: 1)).toSortedSet() - listOfArray.toSortedSet()).toTypedArray()
+}
+
+
+
